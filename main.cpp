@@ -1,8 +1,15 @@
 #include <iostream>
+#include <string>
+#include "ProjectEulerBaseProblem.h"
 
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+    ProjectEulerBaseProblem problem = ProjectEulerBaseProblem();
+    problem.setProblemName("prob1");
+    problem.setUrlString("fuck url");
+
+    cout << problem;
+
     return 0;
 }
