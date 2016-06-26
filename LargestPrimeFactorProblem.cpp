@@ -17,7 +17,7 @@ LargestPrimeFactorProblem:: ~LargestPrimeFactorProblem() {
 }
 
 
-std::pair<long, long> fermatFactorization(const long number) {
+std::pair<long, long> LargestPrimeFactorProblem::fermatFactorization(const long number) const {
     long a = ceil(sqrt(number));
     long b2 = a * a - number;
     double b = sqrt(b2);
@@ -28,9 +28,9 @@ std::pair<long, long> fermatFactorization(const long number) {
     }
 
     return std::make_pair(a - long(b), a + long(b));
-};
+}
 
-long findLargestPrimeFactorRecursively(const long number) {
+long LargestPrimeFactorProblem::findLargestPrimeFactorRecursively(const long number) const {
     auto factors = fermatFactorization(number);
     if (factors.first == 1 || factors.second == 1) {
         return fmax(factors.first, factors.second);

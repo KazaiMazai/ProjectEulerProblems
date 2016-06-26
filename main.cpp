@@ -4,6 +4,7 @@
 #include "MultiplesOfThreeFiveProblem.h"
 #include "DiceGameProblem.h"
 #include "LargestPrimeFactorProblem.h"
+#include "SummationOfPrimesProblem.h"
 
 using namespace std;
 
@@ -20,6 +21,11 @@ int main() {
     auto problem_2 = LargestPrimeFactorProblem();
     cout << problem_2 << endl;
     cout << problem_2.solveProblem() << endl;
+
+    auto problem_3 = SummationOfPrimesProblem();
+    cout << problem_3 << endl;
+    cout.precision(20);
+    cout << problem_3.solveProblem() << endl;
 
     return 0;
 }

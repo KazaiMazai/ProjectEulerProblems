@@ -13,8 +13,6 @@ MultiplesOfThreeFiveProblem::~MultiplesOfThreeFiveProblem() {
 
 }
 
-
-
 double MultiplesOfThreeFiveProblem::solveProblem() const {
 
     int multiples_sum = 0;
