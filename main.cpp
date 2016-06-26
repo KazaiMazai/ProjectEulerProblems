@@ -2,16 +2,19 @@
 #include <string>
 #include "ProjectEulerBaseProblem.h"
 #include "MultiplesOfThreeFiveProblem.h"
+#include "DiceGameProblem.h"
 
 using namespace std;
 
 int main() {
-    MultiplesOfThreeFiveProblem problem_1 = MultiplesOfThreeFiveProblem();
-    cout << problem_1 << endl;
-    cout << problem_1.solveProblem() << endl;
-    cout << problem_1.solveProblemFaster() << endl;
+    ProjectEulerBaseProblem problem = MultiplesOfThreeFiveProblem();
+    cout << problem << endl;
+    cout << problem.solveProblem() << endl;
 
-
+    problem = DiceGameProblem();
+    cout << problem << endl;
+    cout.precision(7);
+    cout << problem.solveProblem() << endl;
 
     return 0;
 }

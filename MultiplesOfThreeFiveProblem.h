@@ -18,10 +18,11 @@ class MultiplesOfThreeFiveProblem : public ProjectEulerBaseProblem {
 
     const int kProblemIterationsLimit = 1000;
 
-public:
+ public:
     MultiplesOfThreeFiveProblem();
+    ~MultiplesOfThreeFiveProblem();
     double solveProblem() const override;
-    double solveProblemFaster() const;
+
 };
 
 #endif //PROJECTEULER_MULTIPLESOFTHREEFIVEPROBLEM_H

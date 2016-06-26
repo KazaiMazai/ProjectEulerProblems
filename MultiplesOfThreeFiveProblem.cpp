@@ -9,36 +9,28 @@ MultiplesOfThreeFiveProblem::MultiplesOfThreeFiveProblem() :
 
 }
 
-double MultiplesOfThreeFiveProblem::solveProblem() const  {
-    int multiplesSum = 0;
+MultiplesOfThreeFiveProblem::~MultiplesOfThreeFiveProblem() {
 
-    for (int i = 0; i < kProblemIterationsLimit; ++i) {
-
-        if (i % 3 == 0 || i % 5 == 0) {
-            multiplesSum += i;
-        }
-
-    }
-
-    return multiplesSum;
 }
 
-double MultiplesOfThreeFiveProblem::solveProblemFaster() const {
 
-    int multiplesSum = 0;
+
+double MultiplesOfThreeFiveProblem::solveProblem() const {
+
+    int multiples_sum = 0;
 
     for (int i = 0; i < kProblemIterationsLimit; i += 3) {
-        multiplesSum += i;
+        multiples_sum += i;
     }
 
     for (int i = 0; i < kProblemIterationsLimit; i += 5) {
-        multiplesSum += i;
+        multiples_sum += i;
     }
 
     for (int i = 0; i < kProblemIterationsLimit; i += 15) {
-        multiplesSum -= i;
+        multiples_sum -= i;
     }
 
-    return multiplesSum;
+    return multiples_sum;
 }
 
