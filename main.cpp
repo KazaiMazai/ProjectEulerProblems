@@ -5,6 +5,7 @@
 #include "DiceGameProblem.h"
 #include "LargestPrimeFactorProblem.h"
 #include "SummationOfPrimesProblem.h"
+#include "SquareFreeBinomialCoefProblem.h"
 
 using namespace std;
 
@@ -26,6 +27,11 @@ int main() {
     cout << problem_3 << endl;
     cout.precision(20);
     cout << problem_3.solveProblem() << endl;
+
+    auto problem_4 = SquareFreeBinomialCoefProblem();
+    cout << problem_4 << endl;
+    cout.precision(20);
+    cout << problem_4.solveProblem() << endl;
 
     return 0;
 }

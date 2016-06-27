@@ -14,7 +14,6 @@ MultiplesOfThreeFiveProblem::~MultiplesOfThreeFiveProblem() {
 }
 
 double MultiplesOfThreeFiveProblem::solveProblem() const {
-
     int multiples_sum = 0;
 
     for (int i = 0; i < kProblemIterationsLimit; i += 3) {

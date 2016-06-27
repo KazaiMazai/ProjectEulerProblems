@@ -15,14 +15,13 @@ The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 be
  */
 
 class MultiplesOfThreeFiveProblem : public ProjectEulerBaseProblem {
-
+ private:
     const int kProblemIterationsLimit = 1000;
 
  public:
     MultiplesOfThreeFiveProblem();
     ~MultiplesOfThreeFiveProblem();
     double solveProblem() const override;
-
 };
 
 #endif //PROJECTEULER_MULTIPLESOFTHREEFIVEPROBLEM_H

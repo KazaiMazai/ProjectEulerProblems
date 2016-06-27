@@ -50,7 +50,7 @@ void ProjectEulerBaseProblem::setUrlString(const std::string& urlString) {
 }
 
 double ProjectEulerBaseProblem::solveProblem() const {
-    return  0.0;
+    throw "solveProblem is not implemented yet.";
 }
 
 std::ostream& operator<<(std::ostream& ostream, const ProjectEulerBaseProblem& problem) {
